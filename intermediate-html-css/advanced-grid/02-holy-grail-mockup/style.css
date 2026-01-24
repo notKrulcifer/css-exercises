@@ -51,6 +51,10 @@
 
 .sidebar {
   background-color: #C50208;
+  grid-area: 2 / 1 / 4 / 2;
+  display: grid;
+  grid-template-rows: repeat(4, 150px);
+  align-content: space-around;
 }
 
 .sidebar .photo {
@@ -67,6 +71,13 @@
   color: black;
   font-size: 16px;
   font-weight: normal;
+}
+
+.sidebar .photo,
+.sidebar .side-content {
+  display: grid;
+  justify-content: center;
+  place-items: center;
 }
 
 .nav {
